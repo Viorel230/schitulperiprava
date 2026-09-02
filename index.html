@@ -40,20 +40,19 @@
     <!-- Header / Navigație -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="#" class="flex items-center gap-3">
-                <img src="LOGO PERIPRAVA.png" alt="Schitul Periprava - Episcopia Tulcii" class="w-16 h-16 object-contain">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="LOGO PERIPRAVA.png" alt="Schitul Periprava" class="w-14 h-14 object-contain">
                 <div>
                     <span class="block text-xl font-bold text-burgundy tracking-wide uppercase">Schitul Periprava</span>
                     <span class="block text-xs text-gray-600 font-medium italic">Episcopia Tulcii • Delta Dunării</span>
                 </div>
             </a>
             
-            <!-- Meniu cu legătură către pagina Acatistului -->
             <nav class="hidden md:flex gap-6 font-semibold text-gray-700">
                 <a href="#despre" class="hover:text-burgundy transition">Despre Noi</a>
                 <a href="#istoric" class="hover:text-burgundy transition">Istoric</a>
-                <a href="#galerie" class="hover:text-burgundy transition">Galerie</a>
                 <a href="acatist.html" class="text-burgundy hover:text-gold transition font-bold"><i class="fas fa-cross text-gold mr-1"></i> Acatistul Sfinților</a>
+                <a href="#galerie" class="hover:text-burgundy transition">Galerie</a>
                 <a href="#pomelnic" class="hover:text-burgundy transition">Trimite Pomelnic</a>
                 <a href="#donatii" class="hover:text-burgundy transition">Donații</a>
                 <a href="#contact" class="hover:text-burgundy transition">Contact</a>
@@ -80,38 +79,63 @@
         </div>
     </section>
 
-    <!-- Secțiune Despre Noi -->
+    <!-- SECȚIUNEA RESTRUCTURATĂ ÎN 2 COLOANE: DESPRE NOI + PLAYER YOUTUBE -->
     <section id="despre" class="py-16 px-4 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-burgundy font-bold uppercase tracking-wider text-sm">Oază de Rugăciune</span>
-                <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-4">Construcția și Misiunea Schitului</h2>
-                <p class="text-gray-600 mb-4 leading-relaxed">
-                    Schitul Periprava este construit pe locul de jertfă a mii de deținuți politici care au suferit pe aceste meleaguri pentru credință și apărarea valorilor neamului.
-                </p>
-                <p class="text-gray-600 mb-6 leading-relaxed">
-                    Prin sprijinul credincioșilor și pelerinilor de pretutindeni, lucrările la ansamblul monastic înaintează, creând un spațiu sfânt de rugăciune și neuitare.
-                </p>
-                <div class="flex gap-4 border-l-4 border-gold pl-4 py-2 bg-white shadow-sm rounded-r mb-4">
-                    <div>
-                        <span class="block font-bold text-burgundy">Rugăciune și Neuitare</span>
-                        <span class="text-xs text-gray-500">Puteți citi Acatistul Sfinților Mărturisitori direct pe site-ul nostru.</span>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            
+            <!-- COLOANA STÂNGĂ: Text + Poze SUB text -->
+            <div class="space-y-6">
+                <div>
+                    <span class="text-burgundy font-bold uppercase tracking-wider text-sm">Oază de Rugăciune</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-4">Construcția și Misiunea Schitului</h2>
+                    <p class="text-gray-600 leading-relaxed mb-3">
+                        Schitul Periprava este construit pe locul de jertfă a mii de deținuți politici care au suferit pe aceste meleaguri pentru credință și apărarea valorilor neamului.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Prin sprijinul credincioșilor și pelerinilor de pretutindeni, lucrările la ansamblul monastic înaintează, creând un spațiu sfânt de rugăciune și neuitare.
+                    </p>
+                </div>
+
+                <a href="acatist.html" class="inline-block bg-burgundy text-white font-bold px-5 py-2.5 rounded-md hover:bg-burgundyHover transition text-sm border-b-2 border-gold shadow-sm">
+                    <i class="fas fa-book-open mr-2 text-gold"></i>Citește Acatistul Sfinților
+                </a>
+
+                <!-- Pozele amplasate SUB text -->
+                <div class="grid grid-cols-2 gap-3 p-2 bg-white rounded-xl shadow-lg border-2 border-gold mt-6">
+                    <div class="rounded-lg overflow-hidden h-48">
+                        <img src="cladire.jpg" alt="Biserica Schitului" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden h-48">
+                        <img src="peisaj.jpg" alt="Vedere Delta Dunării" class="w-full h-full object-cover">
                     </div>
                 </div>
-                <a href="acatist.html" class="inline-block bg-burgundy text-white font-bold px-5 py-2 rounded-md hover:bg-burgundyHover transition text-sm">
-                    <i class="fas fa-book-open mr-2"></i>Citește Acatistul
-                </a>
             </div>
-            
-            <!-- Colaj Foto -->
-            <div class="grid grid-cols-2 gap-3 p-2 bg-white rounded-xl shadow-2xl border-2 border-gold">
-                <div class="rounded-lg overflow-hidden h-64">
-                    <img src="cladire.jpg" alt="Biserica Schitului" class="w-full h-full object-cover">
+
+            <!-- COLOANA DREAPTĂ: Player YouTube integrat direct -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl border-2 border-gold space-y-4">
+                <div class="border-b pb-3">
+                    <span class="text-burgundy font-bold uppercase tracking-wider text-xs block"><i class="fas fa-music text-gold mr-1"></i> Cântări Duhovnicești</span>
+                    <h3 class="text-xl font-bold text-gray-900 mt-1">Troparele Sfinților Mărturisitori</h3>
+                    <p class="text-xs text-gray-500 mt-1">Cântări psaltice interpretate de Vlad Roșu[cite: 1]</p>
                 </div>
-                <div class="rounded-lg overflow-hidden h-64">
-                    <img src="peisaj.jpg" alt="Vedere Delta Dunării" class="w-full h-full object-cover">
+
+                <!-- Cadrul iFrame YouTube -->
+                <div class="relative w-full rounded-xl overflow-hidden shadow-md aspect-video">
+                    <iframe 
+                        class="w-full h-full" 
+                        src="https://www.youtube.com/embed/6sE9wfh4V3o" 
+                        title="Troparele Sfinților Români canonizați de Biserica Ortodoxă Română - Vlad Roșu" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-burgundy text-xs text-gray-700 leading-relaxed">
+                    <i class="fas fa-info-circle text-burgundy mr-1"></i> Puteți asculta aceste troparele închinate Sfinților Mărturisitori și Mucenici în timp ce navigați pe pagina schitului.
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -137,10 +161,10 @@
         <h2 class="text-3xl font-bold text-center text-gray-900 mt-1 mb-10">Galerie Foto</h2>
         <div class="grid sm:grid-cols-2 gap-6">
             <div class="rounded-xl overflow-hidden shadow-md border-2 border-white">
-                <img src="cladire.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-300">
+                <img src="cladire.jpg" class="w-full h-72 object-cover">
             </div>
             <div class="rounded-xl overflow-hidden shadow-md border-2 border-white">
-                <img src="peisaj.jpg" class="w-full h-72 object-cover hover:scale-105 transition duration-300">
+                <img src="peisaj.jpg" class="w-full h-72 object-cover">
             </div>
         </div>
     </section>
@@ -187,14 +211,6 @@
                     </div>
                 </div>
 
-                <div class="bg-sand p-4 rounded-lg border border-gold/40">
-                    <label class="block text-sm font-semibold text-gray-700 mb-2">Pristavă / Prisosit (Opțional - Suma oferită schitului)</label>
-                    <div class="flex items-center gap-3">
-                        <input type="number" min="10" placeholder="50" class="w-32 p-2 border rounded-md text-center font-bold text-burgundy">
-                        <span class="font-bold text-gray-600">RON</span>
-                    </div>
-                </div>
-
                 <button type="submit" class="w-full bg-burgundy hover:bg-burgundyHover text-white py-3 rounded-lg font-bold text-lg shadow-md transition flex justify-center items-center gap-2">
                     <i class="fas fa-paper-plane"></i> Trimite Pomelnicul
                 </button>
@@ -207,68 +223,16 @@
         <div class="max-w-5xl mx-auto text-center space-y-8">
             <h2 class="text-3xl font-bold">Susține Continuarea Lucrărilor</h2>
             <p class="text-gray-200">Orice sprijin financiar este de mare ajutor pentru comunitatea monahală din Periprava.</p>
-            
-            <div class="grid md:grid-cols-3 gap-6 text-left text-gray-800">
-                
-                <!-- Plată Rapidă Card -->
-                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold md:col-span-2">
-                    <h3 class="text-xl font-bold text-burgundy mb-4"><i class="fas fa-credit-card mr-2"></i> Donație Directă cu Cardul</h3>
-                    <form id="donatieForm" class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-semibold text-gray-700 mb-1">Alege Suma Donației</label>
-                            <div class="grid grid-cols-4 gap-2 mb-3">
-                                <button type="button" onclick="setSuma(30)" class="border border-burgundy text-burgundy py-2 rounded font-bold hover:bg-burgundy hover:text-white transition">30 RON</button>
-                                <button type="button" onclick="setSuma(50)" class="border border-burgundy text-burgundy py-2 rounded font-bold hover:bg-burgundy hover:text-white transition">50 RON</button>
-                                <button type="button" onclick="setSuma(100)" class="border border-burgundy text-burgundy py-2 rounded font-bold hover:bg-burgundy hover:text-white transition">100 RON</button>
-                                <button type="button" onclick="setSuma(200)" class="border border-burgundy text-burgundy py-2 rounded font-bold hover:bg-burgundy hover:text-white transition">200 RON</button>
-                            </div>
-                            <input type="number" id="sumaSeta" class="w-full p-2 border rounded" placeholder="Altă sumă (RON)">
-                        </div>
-
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" required placeholder="Nume Complet" class="p-2 border rounded">
-                            <input type="email" required placeholder="Email" class="p-2 border rounded">
-                        </div>
-
-                        <button type="submit" class="w-full bg-gold hover:bg-yellow-600 text-gray-900 font-bold py-3 rounded transition flex items-center justify-center gap-2">
-                            <i class="fas fa-lock"></i> Plătește Securizat cu Cardul
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Transfer Bancar & Formular 230 -->
-                <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold">
-                        <h4 class="font-bold text-burgundy mb-2"><i class="fas fa-university mr-2"></i> Cont Bancar IBAN</h4>
-                        <p class="text-xs text-gray-500 mb-2">Banca Comercială Română (BCR)</p>
-                        <div class="bg-gray-100 p-2 rounded text-xs font-mono break-all font-bold text-gray-700">
-                            RO00 RNCB 0000 0000 0000 0000
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold">
-                        <h4 class="font-bold text-burgundy mb-2"><i class="fas fa-file-pdf mr-2"></i> Formularul 230</h4>
-                        <p class="text-xs text-gray-600 mb-3">Redirecționează 3.5% din impozit.</p>
-                        <a href="#" class="block text-center bg-burgundy text-white text-xs font-bold py-2 rounded hover:bg-burgundyHover transition">Descarcă Formular PDF</a>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 px-4 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Contact</h2>
-        <div class="grid md:grid-cols-2 gap-8 bg-white p-8 rounded-xl shadow-md border border-gray-100">
-            <div class="space-y-4">
-                <p><strong>Adresă:</strong> Sat Periprava, Comuna C.A. Rosetti, Jud. Tulcea</p>
-                <p><strong>Jurisdicție:</strong> Episcopia Tulcii</p>
-                <p><strong>Email:</strong> contact@schitulperiprava.ro</p>
-            </div>
-            <div>
-                <p class="text-sm text-gray-600">Pentru vizite, pelerinaje sau cazare duhovnicească, vă rugăm să ne contactați telefonic în prealabil.</p>
-            </div>
+        <div class="bg-white p-8 rounded-xl shadow-md space-y-2">
+            <p><strong>Adresă:</strong> Sat Periprava, Comuna C.A. Rosetti, Jud. Tulcea</p>
+            <p><strong>Jurisdicție:</strong> Episcopia Tulcii</p>
+            <p><strong>Email:</strong> contact@schitulperiprava.ro</p>
         </div>
     </section>
 
@@ -282,15 +246,9 @@
             <div class="flex gap-6">
                 <a href="acatist.html" class="hover:text-white transition">Acatistul Sfinților</a>
                 <a href="#" class="hover:text-white transition">Termeni și Condiții</a>
-                <a href="#" class="hover:text-white transition">Politică GDPR</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        function setSuma(val) {
-            document.getElementById('sumaSeta').value = val;
-        }
-    </script>
 </body>
 </html>
